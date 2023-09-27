@@ -24,7 +24,6 @@ services:
       dockerfile: golang/Dockerfile
       args:
         VERSION: "1.20"
-        DEBIAN_VERSION: "buster"
 
   golang1.19:
     image: serialt/okteto-go:1.19
@@ -33,13 +32,5 @@ services:
       dockerfile: golang/Dockerfile
       args:
         VERSION: "1.19"
-        DEBIAN_VERSION: "buster"
 
-  golang1.18:
-    image: serialt/okteto-go:1.18
-    build:
-      context: .
-      dockerfile: golang/Dockerfile
-      args:
-        VERSION: "1.18"
-        DEBIAN_VERSION: "buster"
+
