@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   golang1:
-    image: okteto/golang:1
+    image: serialt/okteto-go:1
     build:
       context: .
       dockerfile: golang/Dockerfile
@@ -10,7 +10,7 @@ services:
         VERSION: "1.21"
 
   golang1.21:
-    image: okteto/golang:1.21
+    image: serialt/okteto-go:1.21
     build:
       context: .
       dockerfile: golang/Dockerfile
@@ -18,7 +18,7 @@ services:
         VERSION: "1.21"
 
   golang1.20:
-    image: okteto/golang:1.20
+    image: serialt/okteto-go:1.20
     build:
       context: .
       dockerfile: golang/Dockerfile
@@ -27,7 +27,7 @@ services:
         DEBIAN_VERSION: "buster"
 
   golang1.19:
-    image: okteto/golang:1.19
+    image: serialt/okteto-go:1.19
     build:
       context: .
       dockerfile: golang/Dockerfile
@@ -36,7 +36,7 @@ services:
         DEBIAN_VERSION: "buster"
 
   golang1.18:
-    image: okteto/golang:1.18
+    image: serialt/okteto-go:1.18
     build:
       context: .
       dockerfile: golang/Dockerfile

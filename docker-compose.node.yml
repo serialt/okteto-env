@@ -2,21 +2,21 @@ version: '3.7'
 
 services:
   node18:
-    image: okteto/node:18
+    image: serialt/okteto-node:18
     build:
       context: .
       dockerfile: node/Dockerfile
       args:
         VERSION: 18
   node16:
-    image: okteto/node:16
+    image: serialt/okteto-node:16
     build:
       context: .
       dockerfile: node/Dockerfile
       args:
         VERSION: 16
   node14:
-    image: okteto/node:14
+    image: serialt/okteto-node:14
     build:
       context: .
       dockerfile: node/Dockerfile
