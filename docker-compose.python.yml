@@ -7,46 +7,32 @@ services:
       context: .
       dockerfile: python/Dockerfile
       args:
-        VERSION: 3.11
+        VERSION: "3.11"
   python310:
     image: serialt/okteto-python:3.10
     build:
       context: .
       dockerfile: python/Dockerfile
       args:
-        VERSION: 3.10
+        VERSION: "3.10"
   python39:
     image: serialt/okteto-python:3.9
     build:
       context: .
       dockerfile: python/Dockerfile
       args:
-        VERSION: 3.9
+        VERSION: "3.9"
   python38:
     image: serialt/okteto-python:3.8
     build:
       context: .
       dockerfile: python/Dockerfile
       args:
-        VERSION: 3.8
-  python37:
-    image: serialt/okteto-python:3.7
-    build:
-      context: .
-      dockerfile: python/Dockerfile
-      args:
-        VERSION: 3.7
+        VERSION: "3.8"
   python36:
     image: serialt/okteto-python:3.6
     build:
       context: .
       dockerfile: python/Dockerfile
       args:
-        VERSION: 3.6
-  python2:
-    image: serialt/okteto-python:2
-    build:
-      context: .
-      dockerfile: python/Dockerfile
-      args:
-        VERSION: 2
+        VERSION: "3.6"

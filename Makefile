@@ -19,30 +19,27 @@ build:
 		--set "*.platform=linux/amd64"
 
 push:
-	docker buildx bake -f docker-compose.dev.yml \
-		--push \
-		--set "*.platform=linux/amd64,linux/arm64"
 	docker buildx bake -f docker-compose.golang.yml \
 		--push \
 		--set "*.platform=linux/amd64,linux/arm64"
-	docker buildx bake -f docker-compose.node.yml \
-		--push \
-		--set "*.platform=linux/amd64,linux/arm64"
-	docker buildx bake -f docker-compose.php.yml \
-		--push \
-		--set "*.platform=linux/amd64,linux/arm64"
+	# docker buildx bake -f docker-compose.node.yml \
+	# 	--push \
+	# 	--set "*.platform=linux/amd64,linux/arm64"
+	# docker buildx bake -f docker-compose.php.yml \
+	# 	--push \
+	# 	--set "*.platform=linux/amd64,linux/arm64"
 	docker buildx bake -f docker-compose.python.yml \
 		--push \
 		--set "*.platform=linux/amd64,linux/arm64"
-	docker buildx bake -f docker-compose.ruby.yml \
-		--push \
-		--set "*.platform=linux/amd64,linux/arm64"
-	docker buildx bake -f docker-compose.java.yml \
-		--push \
-		--set "*.platform=linux/amd64"
-	docker buildx bake -f docker-compose.dotnet.yml \
-		--push \
-		--set "*.platform=linux/amd64"
+	# docker buildx bake -f docker-compose.ruby.yml \
+	# 	--push \
+	# 	--set "*.platform=linux/amd64,linux/arm64"
+	# docker buildx bake -f docker-compose.java.yml \
+	# 	--push \
+	# 	--set "*.platform=linux/amd64"
+	# docker buildx bake -f docker-compose.dotnet.yml \
+	# 	--push \
+	# 	--set "*.platform=linux/amd64"
 
 push.rust:
 	docker buildx bake -f docker-compose.rust.yml \
