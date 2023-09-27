@@ -14,6 +14,6 @@ RUN go install github.com/codegangsta/gin@latest && \
 
 ENV CGO_ENABLED=0
 ENV GOPROXY=https://goproxy.cn,direct
-RUN sed -i 's/\w*.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources 
+RUN sed -i 's/\w*.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources
 
 CMD ["bash"]
